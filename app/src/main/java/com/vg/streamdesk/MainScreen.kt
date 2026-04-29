@@ -71,7 +71,7 @@ fun MainScreen(viewModel: StreamDeskViewModel) {
     var lastInteractionTime by remember { mutableLongStateOf(System.currentTimeMillis()) }
     
     // Auto-switch to Media Page if idle for 10s and playing
-    LaunchedEffect(mediaInfo?.status) {
+    LaunchedEffect(Unit) {
         while (true) {
             delay(1000)
             val currentTime = System.currentTimeMillis()
@@ -177,29 +177,37 @@ fun DeckPage(
                 horizontalArrangement = Arrangement.spacedBy(horizontalGap, Alignment.CenterHorizontally),
                 verticalArrangement = Arrangement.spacedBy(verticalGap, Alignment.CenterVertically)
             ) {
-                item { DeckIconButton("Lock", Icons.Default.Lock, Color(0xFFFF5F6D), itemSize) { viewModel.lockScreen() } }
-                item { DeckIconButton("Vol Up", Icons.Default.VolumeUp, SpotifyLightGreen, itemSize) { viewModel.controlVolume("up") } }
-                item { DeckIconButton("Vol Down", Icons.Default.VolumeDown, SpotifyLightGreen, itemSize) { viewModel.controlVolume("down") } }
+                item { DeckIconButton("Lock", Icons.Default.Lock, Color(0xFFFF5F6D), itemSize) { viewModel.lockScreen(); lastInteractionTime = System.currentTimeMillis() } }
+                item { DeckIconButton("Vol Up", Icons.Default.VolumeUp, SpotifyLightGreen, itemSize) { viewModel.controlVolume("up"); lastInteractionTime = System.currentTimeMillis() } }
+                item { DeckIconButton("Vol Down", Icons.Default.VolumeDown, SpotifyLightGreen, itemSize) { viewModel.controlVolume("down"); lastInteractionTime = System.currentTimeMillis() } }
                 item { 
                     DeckIconButton("YouTube", Icons.Default.PlayArrow, Color(0xFFFF0200), itemSize) { 
                         viewModel.launchYoutube() 
+                        lastInteractionTime = System.currentTimeMillis()
                         onNavigate(1)
                     } 
                 }
                 item { 
                     DeckLaunchButton("Zalo", "https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png", itemSize) { 
                         viewModel.launchZalo() 
+                        lastInteractionTime = System.currentTimeMillis()
                     } 
                 }
                 items(windows) { window ->
                     DeckWindowButton(window, itemSize) { 
                         viewModel.activateWindow(window.id)
-                        // If this window is likely the current media player, switch to Media tab
+                        lastInteractionTime = System.currentTimeMillis() // Reset idle timer on click
+                        
+                        // Smart Navigation: if clicking a media-related window, switch to Media tab
+                        val winTitle = window.title.lowercase()
                         val currentPlayer = mediaInfo?.player?.lowercase() ?: ""
-                        if (currentPlayer.isNotEmpty() && (
-                            window.title.lowercase().contains(currentPlayer) || 
-                            currentPlayer.contains(window.title.lowercase())
-                        )) {
+                        val isMediaApp = winTitle.contains("spotify") || 
+                                       winTitle.contains("youtube") || 
+                                       winTitle.contains("music") || 
+                                       winTitle.contains("vlc") ||
+                                       (currentPlayer.isNotEmpty() && winTitle.contains(currentPlayer))
+                        
+                        if (isMediaApp) {
                             onNavigate(1)
                         }
                     }
@@ -215,9 +223,13 @@ fun MediaPage(info: MediaInfo?, viewModel: StreamDeskViewModel) {
     var sliderValue by remember { mutableStateOf(0f) }
     var isDragging by remember { mutableStateOf(false) }
 
-    LaunchedEffect(info) {
-        if (!isDragging && info != null && info.duration > 0) {
-            sliderValue = info.position / info.duration
+    LaunchedEffect(info?.title, info?.artist, info?.position) {
+        if (!isDragging) {
+            sliderValue = if (info != null && info.duration > 0) {
+                info.position / info.duration
+            } else {
+                0f
+            }
         }
     }
 
