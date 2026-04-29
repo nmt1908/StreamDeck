@@ -6830,3 +6830,1059 @@ INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
 INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
 [200] GET /backup/status (0.01s)
 INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.02s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.02s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.02s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:59271 - "GET /media/info HTTP/1.1" 200 OK
+[WINDOWS] Sending 5 windows
+  - 0x01e00004: Brave Web Browser
+  - 0x05200004: Google Chrome
+  - 0x02000036: Antigravity
+  - 0x076003dd: Android Studio
+  - 0x02c0003e: Thunderbird Mail
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:59271 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:59271 - "GET /backup/status HTTP/1.1" 200 OK

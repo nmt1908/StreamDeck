@@ -59,6 +59,12 @@ class StreamDeskViewModel : ViewModel() {
         }
     }
 
+    fun activateMediaTab() {
+        viewModelScope.launch {
+            try { api.activateMediaTab() } catch (e: Exception) {}
+        }
+    }
+
     fun seekMedia(position: Float) {
         viewModelScope.launch {
             try { api.seekMedia(position) } catch (e: Exception) {}
@@ -79,8 +85,18 @@ class StreamDeskViewModel : ViewModel() {
 
     fun activateWindow(id: String) {
         viewModelScope.launch {
-            try { api.activateWindow(id) } catch (e: Exception) {}
+            try { 
+                api.activateWindow(id) 
+            } catch (e: Exception) {
+                // Report error in the message field of mediaInfo so it's visible on UI
+                _mediaInfo.value = _mediaInfo.value?.copy(message = "Activate Error: ${e.message}")
+            }
         }
+    }
+
+    fun debugClick(id: String, title: String, isMedia: Boolean) {
+        val current = _mediaInfo.value ?: MediaInfo("No Media", "Unknown", "Stopped", 0f, 0f, "None")
+        _mediaInfo.value = current.copy(message = "Click: $title (ID: $id) | Nav: $isMedia")
     }
 
     fun launchYoutube() {

@@ -17,8 +17,10 @@ data class MediaInfo(
     val position: Float,
     val duration: Float,
     val player: String,
+    val playerWindowId: String? = null,
     val artUrl: String? = null,
-    val playerIconUrl: String? = null
+    val playerIconUrl: String? = null,
+    val message: String? = null
 )
 
 data class BackupStatus(
@@ -42,6 +44,9 @@ interface StreamDeskApi {
 
     @POST("media/control/{command}")
     suspend fun controlMedia(@Path("command") command: String): SimpleResponse
+
+    @POST("media/activate_tab")
+    suspend fun activateMediaTab(): SimpleResponse
 
     @POST("media/seek/{position}")
     suspend fun seekMedia(@Path("position") position: Float): SimpleResponse

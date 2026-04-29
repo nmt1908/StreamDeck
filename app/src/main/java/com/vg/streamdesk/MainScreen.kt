@@ -73,14 +73,22 @@ fun MainScreen(viewModel: StreamDeskViewModel) {
     // Auto-switch to Media Page if idle for 10s and playing
     LaunchedEffect(Unit) {
         while (true) {
-            delay(1000)
+            delay(500) // Check more frequently (every 0.5s)
             val currentTime = System.currentTimeMillis()
-            if (currentTime - lastInteractionTime >= 10000) {
-                if (mediaInfo?.status == "Playing" && pagerState.currentPage != 1) {
+            val idleTime = currentTime - lastInteractionTime
+            
+            if (idleTime >= 10000) {
+                // If on Page 0 or 2, and media is playing, switch to Page 1
+                if (mediaInfo?.status == "Playing" && pagerState.currentPage != 1 && !pagerState.isScrollInProgress) {
                     pagerState.animateScrollToPage(1)
                 }
             }
         }
+    }
+    
+    // Reset idle timer when page changes manually
+    LaunchedEffect(pagerState.currentPage) {
+        lastInteractionTime = System.currentTimeMillis()
     }
 
     Box(
@@ -105,9 +113,15 @@ fun MainScreen(viewModel: StreamDeskViewModel) {
             // Mỗi trang sẽ được bọc trong vùng Safe Area chuẩn
             Box(modifier = Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
                 when (page) {
-                    0 -> DeckPage(windows, mediaInfo, viewModel) { targetPage ->
-                        coroutineScope.launch { pagerState.animateScrollToPage(targetPage) }
-                    }
+                    0 -> DeckPage(
+                        windows = windows, 
+                        mediaInfo = mediaInfo, 
+                        viewModel = viewModel,
+                        onInteraction = { lastInteractionTime = System.currentTimeMillis() },
+                        onNavigate = { targetPage ->
+                            coroutineScope.launch { pagerState.animateScrollToPage(targetPage) }
+                        }
+                    )
                     1 -> MediaPage(mediaInfo, viewModel)
                     2 -> BackupPage(backupStatus, viewModel)
                 }
@@ -143,6 +157,7 @@ fun DeckPage(
     windows: List<WindowInfo>, 
     mediaInfo: MediaInfo?, 
     viewModel: StreamDeskViewModel,
+    onInteraction: () -> Unit,
     onNavigate: (Int) -> Unit
 ) {
     BoxWithConstraints(
@@ -177,35 +192,33 @@ fun DeckPage(
                 horizontalArrangement = Arrangement.spacedBy(horizontalGap, Alignment.CenterHorizontally),
                 verticalArrangement = Arrangement.spacedBy(verticalGap, Alignment.CenterVertically)
             ) {
-                item { DeckIconButton("Lock", Icons.Default.Lock, Color(0xFFFF5F6D), itemSize) { viewModel.lockScreen(); lastInteractionTime = System.currentTimeMillis() } }
-                item { DeckIconButton("Vol Up", Icons.Default.VolumeUp, SpotifyLightGreen, itemSize) { viewModel.controlVolume("up"); lastInteractionTime = System.currentTimeMillis() } }
-                item { DeckIconButton("Vol Down", Icons.Default.VolumeDown, SpotifyLightGreen, itemSize) { viewModel.controlVolume("down"); lastInteractionTime = System.currentTimeMillis() } }
+                item { DeckIconButton("Lock", Icons.Default.Lock, Color(0xFFFF5F6D), itemSize) { viewModel.lockScreen(); onInteraction() } }
+                item { DeckIconButton("Vol Up", Icons.Default.VolumeUp, SpotifyLightGreen, itemSize) { viewModel.controlVolume("up"); onInteraction() } }
+                item { DeckIconButton("Vol Down", Icons.Default.VolumeDown, SpotifyLightGreen, itemSize) { viewModel.controlVolume("down"); onInteraction() } }
                 item { 
                     DeckIconButton("YouTube", Icons.Default.PlayArrow, Color(0xFFFF0200), itemSize) { 
                         viewModel.launchYoutube() 
-                        lastInteractionTime = System.currentTimeMillis()
+                        onInteraction()
                         onNavigate(1)
                     } 
                 }
                 item { 
                     DeckLaunchButton("Zalo", "https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png", itemSize) { 
                         viewModel.launchZalo() 
-                        lastInteractionTime = System.currentTimeMillis()
+                        onInteraction()
                     } 
                 }
                 items(windows) { window ->
                     DeckWindowButton(window, itemSize) { 
                         viewModel.activateWindow(window.id)
-                        lastInteractionTime = System.currentTimeMillis() // Reset idle timer on click
+                        onInteraction() // Reset idle timer on click
                         
-                        // Smart Navigation: if clicking a media-related window, switch to Media tab
+                        // Smart Navigation: if clicking a known media app, switch to Media tab
                         val winTitle = window.title.lowercase()
-                        val currentPlayer = mediaInfo?.player?.lowercase() ?: ""
                         val isMediaApp = winTitle.contains("spotify") || 
                                        winTitle.contains("youtube") || 
                                        winTitle.contains("music") || 
-                                       winTitle.contains("vlc") ||
-                                       (currentPlayer.isNotEmpty() && winTitle.contains(currentPlayer))
+                                       winTitle.contains("vlc")
                         
                         if (isMediaApp) {
                             onNavigate(1)
@@ -222,13 +235,57 @@ fun MediaPage(info: MediaInfo?, viewModel: StreamDeskViewModel) {
     // Slider Seek State
     var sliderValue by remember { mutableStateOf(0f) }
     var isDragging by remember { mutableStateOf(false) }
+    
+    // Smoother position tracking
+    var localPosition by remember { mutableFloatStateOf(0f) }
 
-    LaunchedEffect(info?.title, info?.artist, info?.position) {
-        if (!isDragging) {
-            sliderValue = if (info != null && info.duration > 0) {
-                info.position / info.duration
-            } else {
-                0f
+    // Sync with server info
+    LaunchedEffect(info?.position) {
+        localPosition = info?.position ?: 0f
+    }
+
+    // Khởi tạo/Reset lại mốc đồng bộ khi đổi bài (title thay đổi)
+    var syncPosition by remember(info?.title) { mutableStateOf(0f) } 
+    var lastSyncTime by remember(info?.title) { mutableStateOf(System.currentTimeMillis()) }
+
+    // Cập nhật vị trí đồng bộ từ server mỗi khi poll mới về (cùng 1 bài)
+    LaunchedEffect(info?.position) {
+        if (info != null && !info.position.isNaN()) {
+            syncPosition = info.position
+            lastSyncTime = System.currentTimeMillis()
+            if (!isDragging) {
+                localPosition = syncPosition
+            }
+        }
+    }
+
+    // Nội suy mượt mà dựa trên thời gian thực tế trôi qua
+    LaunchedEffect(info?.status, info?.title) {
+        if (info?.status == "Playing") {
+            while (true) {
+                if (!isDragging && info != null) {
+                    val duration = info.duration
+                    if (duration > 0f && !duration.isNaN()) {
+                        val elapsedSeconds = (System.currentTimeMillis() - lastSyncTime) / 1000f
+                        localPosition = (syncPosition + elapsedSeconds).coerceAtMost(duration)
+                        sliderValue = (localPosition / duration).coerceIn(0f, 1f)
+                    } else {
+                        localPosition = 0f
+                        sliderValue = 0f
+                    }
+                }
+                delay(16)
+            }
+        } else {
+            if (!isDragging && info != null) {
+                val dur = info.duration
+                if (dur > 0f && !dur.isNaN()) {
+                    localPosition = info.position
+                    sliderValue = (localPosition / dur).coerceIn(0f, 1f)
+                } else {
+                    localPosition = 0f
+                    sliderValue = 0f
+                }
             }
         }
     }
@@ -253,7 +310,14 @@ fun MediaPage(info: MediaInfo?, viewModel: StreamDeskViewModel) {
         ) {
             // Album Art - Kích thước hài hòa (75% Safe Height)
             Card(
-                modifier = Modifier.fillMaxHeight(0.75f).aspectRatio(1f),
+                modifier = Modifier
+                    .fillMaxHeight(0.75f)
+                    .aspectRatio(1f)
+                    .clickable { 
+                        if (info != null) {
+                            viewModel.activateMediaTab()
+                        }
+                    },
                 shape = RoundedCornerShape(16.dp),
                 elevation = CardDefaults.cardElevation(defaultElevation = 24.dp)
             ) {
@@ -276,6 +340,10 @@ fun MediaPage(info: MediaInfo?, viewModel: StreamDeskViewModel) {
                 )
                 Text(info?.artist ?: "Unknown Artist", fontSize = 18.sp, color = SpotifyLightGreen.copy(alpha = 0.7f))
                 
+                if (!info?.message.isNullOrEmpty()) {
+                    // Message hidden as requested
+                }
+                
                 Spacer(modifier = Modifier.height(24.dp))
                 
                 Column {
@@ -294,7 +362,7 @@ fun MediaPage(info: MediaInfo?, viewModel: StreamDeskViewModel) {
                         modifier = Modifier.height(12.dp)
                     )
                     Row(modifier = Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                        Text(formatTime(info?.position?.toInt() ?: 0), color = SpotifyGray, fontSize = 11.sp)
+                        Text(formatTime(localPosition.toInt()), color = SpotifyGray, fontSize = 11.sp)
                         Text(formatTime(info?.duration?.toInt() ?: 0), color = SpotifyGray, fontSize = 11.sp)
                     }
                 }
