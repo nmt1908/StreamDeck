@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec="/home/gmo044/Desktop/Android Studio Source/StreamDesk/start_streamdesk.sh"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=StreamDesk Startup
+Comment=Auto start server and ADB reverse
+Icon=utilities-terminal
+Categories=Utility;
