@@ -3169,3 +3169,437 @@ INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
 [200] GET /backup/status (0.01s)
 INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] POST /media/seek/0.05564784 (0.01s)
+INFO:     127.0.0.1:42441 - "POST /media/seek/0.05564784 HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.02s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53497 - "GET /dock/icon/0x07a00008 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60847 - "GET /dock/icon/0x07e00015 HTTP/1.1" 200 OK
+[200] POST /system/volume/up (0.03s)
+INFO:     127.0.0.1:42441 - "POST /system/volume/up HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] POST /system/volume/up (0.02s)
+INFO:     127.0.0.1:42441 - "POST /system/volume/up HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.02s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.02s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.04s)
+INFO:     127.0.0.1:42441 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:42441 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:42441 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:33337 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:33337 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:33337 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:33337 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:33337 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:33337 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.03s)
+INFO:     127.0.0.1:33337 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.00s)
+INFO:     127.0.0.1:33337 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.01s)
+INFO:     127.0.0.1:33337 - "GET /backup/status HTTP/1.1" 200 OK
+[200] GET /media/info (0.05s)
+INFO:     127.0.0.1:33337 - "GET /media/info HTTP/1.1" 200 OK
+[200] GET /dock/windows (0.01s)
+INFO:     127.0.0.1:33337 - "GET /dock/windows HTTP/1.1" 200 OK
+[200] GET /backup/status (0.02s)
+INFO:     127.0.0.1:33337 - "GET /backup/status HTTP/1.1" 200 OK

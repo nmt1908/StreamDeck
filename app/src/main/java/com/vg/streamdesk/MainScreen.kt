@@ -50,6 +50,7 @@ import android.content.Intent
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.PointerEventPass
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 val SpotifyBlack = Color(0xFF050F0C)
 val SpotifyDarkGreen = Color(0xFF12241E)
