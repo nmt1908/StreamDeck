@@ -1,0 +1,13 @@
+Starting Media Debugger (TrackID check)...
+Time: 10:45:31 | Title: WEAN - She Said ( Of | Pos:  197.78 | Dur:  197.78 | ID: 1E31462EA28A29' [TRACKID CHANGED]
+Time: 10:45:32 | Title: WEAN - She Said ( Of | Pos:  197.78 | Dur:  197.78 | ID: 1E31462EA28A29'
+Time: 10:45:32 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID:  [TRACKID CHANGED]
+Time: 10:45:33 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:33 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:34 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:34 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:35 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:36 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:36 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:37 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 
+Time: 10:45:37 | Title: No player playing    | Pos:    0.00 | Dur:    0.00 | ID: 

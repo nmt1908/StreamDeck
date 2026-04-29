@@ -8,12 +8,14 @@ import struct
 import zlib
 import json
 import re
+import asyncio
+import websockets
 
 # Đảm bảo truy cập được DBus của user để lấy media info
 if "DBUS_SESSION_BUS_ADDRESS" not in os.environ:
     os.environ["DBUS_SESSION_BUS_ADDRESS"] = f"unix:path=/run/user/{os.getuid()}/bus"
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, BackgroundTasks
 from fastapi.responses import FileResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -36,7 +38,12 @@ BACKUP_SCRIPT = "/home/gmo044/Desktop/BackUpCode/auto-backup/BackUpGMO044.py"
 BACKUP_PYTHON = "/home/gmo044/miniconda3/envs/colorSensor/bin/python"
 BACKUP_LOG = os.path.expanduser("~/Desktop/Backup_Log.log")
 
-# Fix race condition: lưu thời điểm vừa start backup
+# Global state for media transition fix
+_last_media_title = ""
+_last_media_player = ""
+_stale_pos = 0.0
+_stale_dur = 0.0
+_in_transition = False
 _backup_start_time: float = 0.0
 
 
@@ -208,13 +215,17 @@ class MediaInfo(BaseModel):
     position: float
     duration: float
     player: str
-    artUrl: Optional[str] = ""
-    playerIconUrl: Optional[str] = ""
-    message: Optional[str] = ""
+    playerWindowId: Optional[str] = None
+    artUrl: Optional[str] = None
+    playerIconUrl: Optional[str] = None
+    message: Optional[str] = None
 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.time()
+    if "/dock/activate" in request.url.path:
+        print(f"[REQUEST] {request.method} {request.url.path}")
+    
     response = await call_next(request)
     if "/icon/" not in request.url.path:
         print(f"[{response.status_code}] {request.method} {request.url.path} ({time.time()-start_time:.2f}s)")
@@ -323,9 +334,46 @@ def get_dock_windows():
             windows.append(WindowInfo(id=wid, title=display_name))
             seen_classes.add(wm_name_lower)
             
+        print(f"[WINDOWS] Sending {len(windows)} windows")
+        for w in windows:
+            print(f"  - {w.id}: {w.title}")
         return windows
     except:
         return []
+
+
+async def get_browser_media_cdp():
+    """Lấy thông tin media trực tiếp từ thẻ <video> của trình duyệt (Brave/Chrome)."""
+    try:
+        res = requests.get("http://localhost:9222/json", timeout=0.2)
+        tabs = res.json()
+        
+        for tab in tabs:
+            if tab.get('type') != 'page': continue
+            ws_url = tab.get('webSocketDebuggerUrl')
+            if not ws_url: continue
+            
+            try:
+                async with websockets.connect(ws_url) as ws:
+                    cmd = {
+                        "id": 1,
+                        "method": "Runtime.evaluate",
+                        "params": {
+                            "expression": "JSON.stringify({pos: document.querySelector('video')?.currentTime, dur: document.querySelector('video')?.duration, title: document.title, artist: document.querySelector('.ytp-title-expanded-title')?.innerText || ''})",
+                            "returnByValue": True
+                        }
+                    }
+                    await ws.send(json.dumps(cmd))
+                    resp = await asyncio.wait_for(ws.recv(), timeout=0.2)
+                    data = json.loads(resp)
+                    val = data['result']['result'].get('value')
+                    if val:
+                        result = json.loads(val)
+                        if result.get('pos') is not None and result.get('dur') is not None:
+                            return result
+            except: continue
+    except: pass
+    return None
 
 
 @app.get("/media/info", response_model=MediaInfo)
@@ -344,25 +392,63 @@ def get_media_info(request: Request):
         if not player or player == "None":
             return MediaInfo(title="No Media", artist="", status="Stopped", position=0, duration=0, player="", artUrl="", playerIconUrl="", message="No active player found.")
 
-        # Sử dụng format JSON của playerctl
-        format_str = '{"title": "{{markup_escape(title)}}", "artist": "{{markup_escape(artist)}}", "album": "{{markup_escape(album)}}", "artUrl": "{{mpris:artUrl}}", "status": "{{status}}"}'
-        
-        meta_res = subprocess.run(["playerctl", "-p", player, "metadata", "--format", format_str], capture_output=True, text=True).stdout.strip()
-        
-        try:
-            meta = json.loads(meta_res)
-        except:
-            meta = {"title": "Unknown", "artist": "Unknown", "status": "Unknown", "artUrl": ""}
+        # 1. Metadata (Title, Artist, Duration, Status)
+        title, artist, status = "Unknown", "Unknown", "Stopped"
+        dur, pos = 0.0, 0.0
+        global _last_media_title, _last_media_player, _stale_pos, _stale_dur, _in_transition
 
-        title = meta.get("title") or "Unknown Title"
-        artist = meta.get("artist") or "Unknown Artist"
-        status = meta.get("status") or "Stopped"
-        
-        # Logic YouTube
+        # Thử lấy từ CDP trước nếu là trình duyệt
+        if "brave" in player.lower() or "chrome" in player.lower():
+            try:
+                cdp_data = asyncio.run(get_browser_media_cdp())
+                if cdp_data:
+                    title = cdp_data.get('title') or title
+                    dur = float(cdp_data.get('dur') or dur)
+                    pos = float(cdp_data.get('pos') or pos)
+                    _in_transition = False
+                    _last_media_title = title
+                    _last_media_player = player
+            except Exception as e:
+                print(f"[CDP ERROR] {e}")
+
+        # 2. Metadata fallback qua playerctl
+        try:
+            meta_res = subprocess.run(
+                ["playerctl", "-p", player, "metadata", "--format", "{{xesam:title}}|{{xesam:artist}}|{{mpris:length}}|{{status}}"],
+                capture_output=True, text=True, timeout=0.5
+            )
+            if meta_res.returncode == 0:
+                parts = meta_res.stdout.strip().split("|")
+                if len(parts) >= 1 and parts[0] and (title == "Unknown" or title == ""): title = parts[0]
+                if len(parts) >= 2 and parts[1]: artist = parts[1]
+                if len(parts) >= 3 and parts[2] and dur <= 0: dur = float(parts[2]) / 1_000_000.0
+                if len(parts) >= 4 and parts[3]: status = parts[3]
+            
+            if pos <= 0:
+                pos_res = subprocess.run(["playerctl", "-p", player, "position"], capture_output=True, text=True, timeout=0.3)
+                if pos_res.returncode == 0:
+                    pos_str = pos_res.stdout.strip()
+                    if pos_str.replace('.', '', 1).isdigit():
+                        pos = float(pos_str)
+        except: pass
+
+        # 3. Transition logic
+        if title != _last_media_title or player != _last_media_player:
+            _in_transition = True
+            _stale_pos, _stale_dur = pos, dur
+            _last_media_title, _last_media_player = title, player
+            
+        if _in_transition:
+            if abs(pos - _stale_pos) > 0.05 or abs(dur - _stale_dur) > 0.1:
+                _in_transition = False
+            else:
+                pos, dur = 0.0, 0.0
+
+        # 4. YouTube Art URL Logic
         video_id = ""
         if "brave" in player.lower() or "chrome" in player.lower():
             try:
-                rd = requests.get("http://localhost:9222/json", timeout=0.15).json()
+                rd = requests.get("http://localhost:9222/json", timeout=0.1).json()
                 for tab in rd:
                     url = tab.get("url", "")
                     if "youtube.com/watch" in url and "v=" in url:
@@ -371,33 +457,23 @@ def get_media_info(request: Request):
             except: pass
 
         art_url = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg" if video_id else f"{base_url}/media/art?player={player}"
-
         p_name = player.lower()
-        if "brave" in p_name: p_icon_key = "brave"
-        elif "chrome" in p_name: p_icon_key = "chrome"
-        else: p_icon_key = p_name.split('.')[0]
+        p_icon_key = "brave" if "brave" in p_name else ("chrome" if "chrome" in p_name else p_name.split('.')[0])
         p_icon_url = f"{base_url}/dock/icon/{p_icon_key}"
 
-        pos_res = subprocess.run(["playerctl", "-p", player, "position"], capture_output=True, text=True).stdout.strip()
-        pos = float(pos_res) if pos_res and pos_res.replace('.', '', 1).isdigit() else 0.0
-        
-        dur_res = subprocess.run(["playerctl", "-p", player, "metadata", "mpris:length"], capture_output=True, text=True).stdout.strip()
-        dur = float(dur_res) / 1_000_000.0 if dur_res and dur_res.lstrip('-').isdigit() else 0.0
+        # 5. Find Window ID
+        player_window_id = None
+        try:
+            if "brave" in player.lower() or "chrome" in player.lower():
+                res = subprocess.run(["wmctrl", "-lx"], capture_output=True, text=True)
+                for line in res.stdout.splitlines():
+                    if "brave" in line.lower() or "chrome" in line.lower():
+                        player_window_id = line.split()[0]
+                        break
+        except: pass
 
         msg = f"Last poll: {time.strftime('%H:%M:%S')} | Active: {player}"
-        if video_id: msg += f" | YT: {video_id}"
-
-        return MediaInfo(
-            title=title, 
-            artist=artist, 
-            status=status, 
-            position=pos, 
-            duration=dur, 
-            player=player, 
-            artUrl=art_url, 
-            playerIconUrl=p_icon_url,
-            message=msg
-        )
+        return MediaInfo(title=title, artist=artist, status=status, position=pos, duration=dur, player=player, playerWindowId=player_window_id, artUrl=art_url, playerIconUrl=p_icon_url, message=msg)
     except Exception as e:
         return MediaInfo(title="Error", artist=str(e)[:50], status="Stopped", position=0, duration=0, player="", artUrl="", playerIconUrl="", message=f"Server Error: {e}")
 
@@ -513,12 +589,42 @@ def is_window_active(target_id_hex):
     except: return False
 
 
+def _activate_browser_tab(keywords: list):
+    """Thử tìm và kích hoạt tab trình duyệt (Brave/Chrome) chứa keyword qua CDP."""
+    try:
+        # Thử cả Brave và Chrome (thường port 9222)
+        resp = requests.get("http://localhost:9222/json", timeout=0.3)
+        if resp.status_code == 200:
+            tabs = resp.json()
+            for tab in tabs:
+                url = tab.get("url", "").lower()
+                title = tab.get("title", "").lower()
+                print(f"[CDP] Checking tab: {title} | {url}")
+                if any(kw.lower() in url or kw.lower() in title for kw in keywords):
+                    print(f"[CDP] Activating tab: {tab['id']}")
+                    requests.get(f"http://localhost:9222/json/activate/{tab['id']}", timeout=0.3)
+                    return True
+    except Exception as e:
+        print(f"[CDP ERROR] {e}")
+        pass
+    return False
+
+
+@app.post("/media/activate_tab")
+def activate_media_tab():
+    """Tìm và kích hoạt tab media trong trình duyệt (dùng cho click vào ảnh bìa)."""
+    _activate_browser_tab(["youtube", "spotify", "music", "soundcloud", "netflix"])
+    return {"status": "ok"}
+
+
 @app.post("/dock/activate/{window_id}")
 def activate_window(window_id: str):
     """Kích hoạt cửa sổ (nếu đang active thì thu nhỏ)."""
+    window_id = window_id.strip()
     env = {**os.environ, "DISPLAY": ":0"}
+    print(f"[ACTIVATE EVENT] ID: '{window_id}'")
     
-    # Danh sách Window ID dạng hex (0x...)
+    # 2. Thực hiện activate cửa sổ
     if window_id.startswith("0x") or window_id.isdigit():
         if is_window_active(window_id):
             subprocess.run(["xdotool", "windowminimize", window_id], env=env)
@@ -702,6 +808,10 @@ def launch_app(app_name: str):
 
     # Chỉ activate nếu KHÔNG yêu cầu incognito hoặc app không phải browser
     if not incognito:
+        # Nếu là youtube, thử tìm tab trước
+        if app_lower == "youtube":
+            _activate_browser_tab(["youtube.com"])
+            
         status = _activate_app_window(keywords)
         if status:
             return {"status": status, "app": app_name}
